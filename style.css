@@ -1,0 +1,227 @@
+/* global styles */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@200;300;400;500;600;700&display=swap");
+
+
+
+body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .menu-toggle {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+        }
+
+        .menu-toggle div {
+            width: 30px;
+            height: 3px;
+            background-color: #fff;
+            margin: 3px 0;
+            transition: 0.4s;
+        }
+
+        .menu-toggle.active div:first-child {
+            transform: rotate(-45deg) translate(-5px, 6px);
+        }
+
+        .menu-toggle.active div:nth-child(2) {
+            opacity: 0;
+        }
+
+        .menu-toggle.active div:last-child {
+            transform: rotate(45deg) translate(-5px, -6px);
+        }
+
+        .nav {
+            display: flex;
+        }
+
+        .nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+
+        @media screen and (max-width: 768px) {
+            .nav {
+                display: none;
+                flex-direction: column;
+                background-color: #333;
+                position: absolute;
+                top: 60px;
+                left: 0;
+                right: 0;
+                z-index: 1;
+                align-items: center;
+            }
+
+            .nav.active {
+                display: flex;
+            }
+
+            .nav a {
+                margin: 10px 0;
+            }
+
+            .menu-toggle {
+                display: flex;
+            }
+        }
+        .difficulty-selector {
+            margin: 20px 0;
+          }
+
+          /* Center the form-group containing the difficulty selector */
+.form-group {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  /* Style the label */
+  label {
+    display: block; /* To ensure proper spacing */
+    font-weight: bold;
+  }
+  
+  /* Style the select element (dropdown) */
+  .form-control {
+    width: 50%; /* Adjust the width as needed */
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #f0f0f0;
+    text-align: center; /* Center the text within the dropdown */
+  }
+  
+
+          .image-container {
+            position: relative;
+          }
+          
+          .image-text {
+            position: absolute;
+            top: 80%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgba(0, 0, 0, 0.5); /* Add a semi-transparent background */
+            color: #fff; /* Text color */
+            padding: 10px;
+            border-radius: 5px;
+            font-size: 20px;
+            text-align: center;
+          }
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background-image: linear-gradient(to right,blue, blue)
+}
+
+.container-fluid {
+    display: flex !important;
+    justify-content: center !important; 
+}
+
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.question-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 2px solid rgba(0,0,0,.4);
+    padding-top: 10px;
+}
+
+
+.quiz-card {
+    width: 60%;
+    max-width: 1200px;
+}
+
+
+
+.mb-2 {
+    cursor: pointer;
+}
+
+.mb-2:hover {
+    transition: all 225ms ease-in-out;
+    background: rgba(0,0,0,.2);
+}
+
+.disabled {
+    pointer-events: none;
+  
+}
+
+.card-img-top {
+    height: 350px;
+    object-fit: cover;
+}
+
+.success {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin: 5rem 0 5rem 0;
+}
+
+.success img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.success div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 2rem;
+}
+
+.restart {
+    width: 50%;
+}
+
+/*responsive */
+@media screen and (max-width: 860) {
+    .restart {
+        position: absolute;
+        bottom: 4rem;
+    }
+}
+
+
+@media screen and (max-width: 700px) {
+    .quiz-card {
+        width: 100%;
+    }
+}
+
