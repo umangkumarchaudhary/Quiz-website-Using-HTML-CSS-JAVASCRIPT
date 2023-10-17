@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Your existing head content -->
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #333;
+        }
+
+        .login-signup {
+            background-color: aqua;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            max-width: 350px;
+        }
+
+        .login {
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        label {
+            font-weight: bold;
+            color: #555;
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        label {
+            font-weight: bold;
+            color: #555;
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .quiz-buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .quiz-button {
+            padding: 10px;
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            text-align: center;
+        }
+
+        .quiz-button:hover {
+            background-color: #0056b3;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        .quiz-info {
+            background-color: #007BFF;
+            color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-signup">
+        <div class="quiz-info">
+            <p>This quiz contains 20 questions. Test your knowledge now!</p>
+            <p>click on Start Quiz to start the quiz</p>
+
+            <div class="quiz-buttons">
+                <h3>Select Difficulty Level</h3>
+                <a href="index.html" class="quiz-button" style="background-color: green; color: white;">Easy</a>
+                <a href="hard.html" class="quiz-button" style="background-color: blue; color: white;">Hard</a>
+                <a href="medium.html" class="quiz-button" style="background-color: blue; color: white;">Medium</a>
+            </div>
+        </div>
+        <!-- <div class="login">
+            <h2>Login</h2>
+            <form onsubmit="return redirectToIndex()">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <button type="submit">Start Quiz</button>
+            </form>
+        </div> -->
+        <!-- Signup section and other content -->
+    </div>
+
+    <script>
+        function redirectToIndex() {
+            // Add your login validation logic here, and if login is successful:
+            // Redirect to the index.html page
+            window.location.href = "index.html";
+            return false; // Prevent the form submission
+        }
+    </script>
+</body>
+</html>

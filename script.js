@@ -1,3 +1,23 @@
+// Add a new timer variable
+let timer = null;
+let timeLeft = 10; // Initial time in seconds
+
+// Create a new startTimer() function
+function startTimer() {
+  timer = setInterval(function () {
+    // Update the timer display
+    const timeLeftElement = getElement("time-left");
+    timeLeftElement.textContent = timeLeft;
+
+    if (timeLeft > 0) {
+      timeLeft--;
+    } else {
+      nextQuestion();
+    }
+  }, 10000); // Update the timer every second
+}
+
+
 /*
 helper functions
 */
@@ -84,6 +104,12 @@ function disableClickEvents() {
 
 //go to next question
 function nextQuestion() {
+
+  if (timer !== null) {
+    // The user has selected an answer within 10 seconds, so clear the timer
+    clearInterval(timer);
+    timer = null;
+  }
   if (quizEnd) {
     let questionContainer = getElement("question-container");
     questionContainer.innerHTML = "";
@@ -97,6 +123,7 @@ function nextQuestion() {
       options[i].classList.remove("bg-success");
       options[i].classList.remove("disabled");
     }
+    startTimer(); 
   }
 }
 

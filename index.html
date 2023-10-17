@@ -22,7 +22,7 @@
   </head>
   <body onload="init()">
 
-    <div class="header">
+    <!-- <div class="header">
       <div class="logo">
           <img src="img/Amazon-Logo-1024x426-1 - Copy.webp" alt="" style="max-height: 80px; max-width: 100%;">
       </div>
@@ -37,16 +37,29 @@
           <a href="#">Categories</a>
           <a href="#">Contact</a>
       </div>
-  </div>
+  </div> -->
 
-  <div class="difficulty-selector form-group">
+  <div class="timer">
+    Time Left: <span id="time-left">10</span> seconds
+  </div>
+  
+
+  <div class="navclass" style="text-align: center;">
+    <h3>Select Difficulty level</h3>
+    <a href="index.html" class="link-box easy-link" style="background-color: green; color: white;" >Easy</a>
+    <a href="hard.html" class="link-box hard-link" style="background-color: blue; color: white;">Hard</a>
+    <a href="medium.html" class="link-box medium-link" style="background-color: blue; color: white;">Medium</a>
+</div>
+
+
+  <!-- <div class="difficulty-selector form-group">
     <label for="difficulty">Select Difficulty:</label>
     <select class="form-control" id="difficulty" onchange="setDifficulty()">
       <option value="easy">Easy</option>
       <option value="medium">Medium</option>
       <option value="hard">Hard</option>
     </select>
-  </div>
+  </div> -->
 
 
     <main>

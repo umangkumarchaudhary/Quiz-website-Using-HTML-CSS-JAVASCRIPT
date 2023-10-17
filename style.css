@@ -92,6 +92,8 @@ body {
 .form-group {
     text-align: center;
     margin-top: 20px;
+    width: 10%;
+    margin-left: 600px;
   }
   
   /* Style the label */
@@ -102,14 +104,97 @@ body {
   
   /* Style the select element (dropdown) */
   .form-control {
-    width: 50%; /* Adjust the width as needed */
-    padding: 10px;
+    width: 10%; /* Adjust the width as needed */
+    
     font-size: 16px;
     border-radius: 5px;
     border: 1px solid #ccc;
     background-color: #f0f0f0;
     text-align: center; /* Center the text within the dropdown */
   }
+
+  .link-box {
+    display: inline-block;
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #333;
+    background-color: #f0f0f0;
+    text-decoration: none;
+    color: #333;
+    border-radius: 5px;
+}
+
+.link-box:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+/* .hard-link {
+    background-color: red;
+    color: white;
+}
+
+.medium-link {
+    background-color: blue;
+    color: white;
+} */
+/* .easy-link {
+    background-color: blue;
+} */
+
+.login-signup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.login, .signup {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-width: 350px;
+}
+
+h2 {
+    color: #333;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+label {
+    font-weight: bold;
+    color: #555;
+}
+
+input[type="text"],
+input[type="password"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+
   
 
           .image-container {
@@ -134,8 +219,11 @@ html {
 
 body {
     margin: 0;
-    background-image: linear-gradient(to right,blue, blue)
+    background-image: url("images/download.jpg");
+    background-size: cover;
+    background-attachment: fixed; /* Optional: Keeps the background fixed while scrolling */
 }
+
 
 .container-fluid {
     display: flex !important;
